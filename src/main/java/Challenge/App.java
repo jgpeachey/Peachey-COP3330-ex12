@@ -6,34 +6,34 @@
 package Challenge;
 
 /*
-Write a program that converts currency. Specifically, convert euros to U.S.
-dollars. Prompt for the amount of money in euros you have, and prompt for
-the current exchange rate of the euro. Print out the new amount in U.S. dollars.
+Create a program that computes simple interest. Prompt for the principal
+amount, the rate as a percentage, and the time, and display the amount
+accrued (principal + interest).
 
-The formula for currency conversion is:
-amount_to = (amount_from * rate_from) / rate_to
-
-where:
-amount_to is the amount in U.S. dollars.
-amount_from is the amount in euros.
-rate_from is the current exchange rate in euros.
-rate_to is the current exchange rate of the U.S. dollar.
+The formula for simple interest is A = P(1 + rt), where P is the principal
+amount, r is the annual rate of interest, t is the number of years the
+amount is invested, and A is the amount at the end of the investment.
 
 Example Output:
-How many euros are you exchanging? 81
-What is the exchange rate? 137.51
-81 euros at an exchange rate of 137.51 is
-111.38 U.S. dollars.
+Enter the principal: 1500
+Enter the rate of interest: 4.3
+Enter the number of years: 4
+After 4 years at 4.3%, the investment will be worth $1758.
 
 Constraints:
-Ensure that fractions of a cent are rounded up to the next penny.
-Use a single output statement.
+*Prompt for the rate as a percentage (like 15, not .15). Divide the input
+by 100 in your program.
+*Ensure that fractions of a cent are rounded up to the next penny.
+*Ensure that the output is formatted as money.
 
 Challenges:
-*Build a dictionary of conversion rates and prompt for the countries
-instead of the rates.
-*Wire up your application to an external API that provides the current
-exchange rates.
+*Ensure that the values entered for principal, rate, and number of years are
+numeric and that the program will not let the user proceed without valid inputs.
+*Alter the program to use a function called calculateSimpleInterest that takes
+in the rate, principal, and number of years and returns the amount at the end
+of the investment.
+*In addition to printing out the final amount, print out the amount at the
+end of each year.
  */
 
 public class App {
